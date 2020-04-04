@@ -1,8 +1,8 @@
 <?php
 /*
-Plugin Name: FreezeWP
+Plugin Name: FreezeWP - Code Freeze Your WordPress Dashboard
 Plugin URI: https://github.com/Asif2BD/FreezeWP
-Description: FreezeWP is a simple plugin that temporarily puts your WordPress site into a "read only" state. It's most useful when you are migrating a site. or just want to prevent changes.
+Description: FreezeWP is a simple plugin that temporarily puts your WordPress site into a "read only" code freeze state. It's most useful when you are migrating a site. or just want to prevent changes.
 Author: M Asif Rahman
 Author URI: https://asif.im
 Text Domain: freezewp
@@ -16,7 +16,7 @@ License: GPLv3
  *
  * FreezeWP is free software; you can redistribute it and/or
  * modify it under the terms of the GNU General Public License
- * as published by the Free Software Foundation; either version 2
+ * as published by the Free Software Foundation; either version 3
  * of the License, or (at your option) any later version.
  *
  * This program is distributed in the hope that it will be useful,
@@ -34,6 +34,10 @@ License: GPLv3
  * @license    http://www.gnu.org/licenses/gpl.txt GPL 3.0
  * @link       https://asif.im
  */
+
+define("WPDEV_PLUGIN_PATH",plugin_dir_path(__FILE__)); #with trailing slash (/)
+
+include_once(WPDEV_PLUGIN_PATH.'include/wpdev-dashboard-widget.php');
 
 if ( ! function_exists( 'fwp_custom_login_message' ) ) {
 	add_filter( 'login_message' , 'fwp_custom_login_message' );
@@ -233,7 +237,7 @@ if ( ! function_exists( 'fwp_admin_init' ) ) {
 	/**
 	 * Remove topic replies and new topics from bbPress
 	 *
-	 * @note	props to theZedt
+	 * 
 	 * @return  void
 	 */
 	if ( class_exists( 'bbPress' ) ) {

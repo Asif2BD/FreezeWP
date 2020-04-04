@@ -1,4 +1,4 @@
-=== FreezeWP ===
+=== FreezeWP - Code Freeze Your WordPress Dashboard ===
 Developer: M Asif Rahman
 Donate link: http://wordpressfoundation.org/donate/
 Contributors: Asif2BD
@@ -10,7 +10,7 @@ Stable tag: 0.1.0
 License: GPLv3
 License URI: https://opensource.org/licenses/GPL-3.0
 
-FreezeWP is a simple plugin that temporarily puts your WordPress site into a "read only" state. It's most useful when you are migrating a site. or just want to prevent changes.
+FreezeWP is a simple plugin that temporarily puts your WordPress site into a "read only" - Code Freeze state. It's most useful when you are migrating a site. or just want to prevent changes.
 
 == Description ==
 
@@ -22,10 +22,19 @@ FreezeWP is a simple plugin that temporarily does the following while activated:
 * Removes notices to upgrade core or plugins
 * Provides notice to dashboard users that any changes will be lost
 * Provides generally "read only" access to the dashboard
+* Also effective with Gutenberg & Elementor
 
 These changes apply to all users (including admins). When deactivated, full functionality is restored. This plugin makes no database or site changes and has no settings. Simply deactivate/delete when no longer needed.
 
 Activate this plugin on your old site when you're in the process of changing web hosts to prevent lost data due to delays in DNS changes, or as a simple short-term "lock down" for other reasons. Also can be network activated to apply to all network sites.
+
+**Check My Other Plugins:**
+
+* **[Essential Addons for Elementor](https://wordpress.org/plugins/essential-addons-for-elementor-lite/)** 
+* **[NotificationX](https://wordpress.org/plugins/notificationx/)** 
+* **[Twitter Cards Meta](https://wordpress.org/plugins/twitter-cards-meta/)** 
+* **[Analytify - Ultimate Google Analytics Dashboard](https://wordpress.org/plugins/wp-analytify/)**
+* **[WP Scheduled Posts](https://wordpress.org/plugins/wp-scheduled-posts/)**
 
 
 == Installation ==
@@ -64,9 +73,10 @@ Let me know what you discover is still available and I'll try to disable modific
 
 == Screenshots ==
 
-1. Plugin Active (Dashboard)
-2. Plugin Active (Plugin Page)
-3. Plugin Disable
+1. FreeZWP(Plugin) Active (Dashboard)
+2. FreeZWP(Plugin) Active (Plugin Page)
+3. FreeZWP(Plugin) Active (Posts Page - No Option To Post)
+4. FreeZWP(Plugin) Disable - All Back To Normal
 
 == Changelog ==
 
